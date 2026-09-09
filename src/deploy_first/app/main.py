@@ -11,7 +11,7 @@ app = FastAPI()
 
 @app.get("/health")
 async def health() -> dict[str, str]:
-    return {"status": "ok", "Environment": "production"}
+    return {"status": "ok", "environment": "production-ready"}
 
 
 @app.get("/health/db")
